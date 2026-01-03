@@ -61,6 +61,7 @@
 * **Interpreted languages** are ideal for rapid development, scripting, and portability.
 * Some modern languages combine both approaches for optimal performance.
 ![JAVA](Java.jpg)
+![JavaScript](JavaScript.jpg)
 ---
 
 
