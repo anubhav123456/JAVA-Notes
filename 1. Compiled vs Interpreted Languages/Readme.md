@@ -51,6 +51,7 @@ Here are **concise summary notes** based on the content you shared:
 | Portability     | Platform-dependent | Platform-independent |
 | Ease of Use     | Harder             | Easier               |
 
+![Key Differences](Difference.jpg)
 ---
 
 ## Conclusion
