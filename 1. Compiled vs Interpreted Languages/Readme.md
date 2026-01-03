@@ -2,7 +2,7 @@ Here are **concise summary notes** based on the content you shared:
 
 ---
 
-## Compiled vs Interpreted Languages – Summary Notes
+## Compiled vs Interpreted Languages
 
 ### Programming Languages (Overview)
 
@@ -38,6 +38,7 @@ Here are **concise summary notes** based on the content you shared:
 * Debugging can be challenging due to interpretation layer.
 * Examples: **Python, JavaScript, Ruby**
 
+![Interpreted Language](Interpreter.jpg)
 ---
 
 ## Key Differences (Quick Comparison)
