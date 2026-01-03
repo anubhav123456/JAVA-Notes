@@ -52,6 +52,7 @@ Here are **concise summary notes** based on the content you shared:
 | Ease of Use     | Harder             | Easier               |
 
 ![Key Differences](Difference.jpg)
+![Key Differences](Difference1.jpg)
 ---
 
 ## Conclusion
