@@ -1,4 +1,4 @@
-Here are **concise summary notes** based on the content you shared:
+
 
 ---
 
@@ -60,7 +60,7 @@ Here are **concise summary notes** based on the content you shared:
 * **Compiled languages** are best for performance-critical and system-level software.
 * **Interpreted languages** are ideal for rapid development, scripting, and portability.
 * Some modern languages combine both approaches for optimal performance.
-
+![JAVA](Java.jpg)
 ---
 
-If you want, I can also convert this into **exam-ready notes**, **one-page revision sheet**, or **comparison diagram** 🙂
+
