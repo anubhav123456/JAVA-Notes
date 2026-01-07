@@ -292,6 +292,62 @@ String.valueOf(99.99); // "99.99"
 
 ---
 
+# Additional Important String Methods
+
+---
+
+## 24. `String.join()` (Java 8+)
+
+* Used to **join multiple strings** using a delimiter.
+* Internally uses `StringBuilder`.
+
+```java
+String result = String.join("-", "Java", "Spring", "React");
+// Java-Spring-React
+```
+
+### Joining a collection
+
+```java
+List<String> skills = List.of("Java", "Spring Boot", "React");
+String joined = String.join(", ", skills);
+// Java, Spring Boot, React
+```
+
+**Use cases:** CSV generation, displaying tags, joining list data
+
+---
+
+## 25. `String.format()`
+
+* Creates **formatted strings** using placeholders (similar to `printf`).
+
+```java
+String msg = String.format("My name is %s and I am %d years old", "Anubhav", 30);
+```
+
+### Common format specifiers
+
+| Specifier | Meaning            |
+| --------- | ------------------ |
+| `%s`      | String             |
+| `%d`      | Integer            |
+| `%f`      | Floating-point     |
+| `%.2f`    | Two decimal places |
+| `%n`      | New line           |
+
+### Example
+
+```java
+double price = 123.456;
+String formatted = String.format("Price: %.2f", price);
+// Price: 123.46
+```
+
+**Use cases:** logs, reports, user messages
+
+---
+
 # Key Interview Points
 
 * Strings are **immutable**
@@ -299,6 +355,8 @@ String.valueOf(99.99); // "99.99"
 * `isEmpty()` ≠ `isBlank()`
 * `startsWith()` checks prefix, `contains()` checks anywhere
 * `replace()` replaces all matches, `replaceFirst()` replaces first match
-* `String.valueOf()` is preferred over concatenation for clarity
+* `String.join()` is best for joining collections
+* `String.format()` improves readability over concatenation
+* `String.valueOf()` is preferred for primitive to String conversion
 ---
 
