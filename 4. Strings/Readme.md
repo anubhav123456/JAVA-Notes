@@ -1,6 +1,3 @@
-
----
-
 # Strings in Java
 
 ### What is a String?
@@ -36,7 +33,7 @@ String b = "Java";  // same reference
 
 ---
 
-# Commonly Used String Methods (Explained)
+# Commonly Used String Methods
 
 ---
 
@@ -105,7 +102,51 @@ String b = "Java";  // same reference
 
 ---
 
-## 7. `toLowerCase()`
+## 7. `startsWith()`
+
+* Checks whether a string **starts with a given prefix**.
+* Case-sensitive.
+
+```java
+String str = "JavaProgramming";
+
+str.startsWith("Java");   // true
+str.startsWith("Program"); // false
+```
+
+### Using offset
+
+```java
+str.startsWith("Program", 4); // true
+```
+
+**Use case:** URL validation, file name checks, protocol checks (`http`, `https`).
+
+---
+
+## 8. `contains()`
+
+* Checks whether a string **contains a sequence of characters** anywhere.
+* Case-sensitive.
+* Accepts `CharSequence`, not `char`.
+
+```java
+String str = "JavaProgramming";
+
+str.contains("Program"); // true
+str.contains("java");    // false
+```
+
+```java
+str.contains("a"); // valid
+// str.contains('a'); ❌ compile-time error
+```
+
+**Internally uses:** `indexOf()`
+
+---
+
+## 9. `toLowerCase()`
 
 * Converts all characters to lowercase.
 
@@ -115,7 +156,7 @@ String b = "Java";  // same reference
 
 ---
 
-## 8. `toUpperCase()`
+## 10. `toUpperCase()`
 
 * Converts all characters to uppercase.
 
@@ -125,7 +166,7 @@ String b = "Java";  // same reference
 
 ---
 
-## 9. `trim()`
+## 11. `trim()`
 
 * Removes **leading and trailing whitespaces**.
 
@@ -135,7 +176,7 @@ String b = "Java";  // same reference
 
 ---
 
-## 10. `isBlank()` (Java 11+)
+## 12. `isBlank()` (Java 11+)
 
 * Returns `true` if the string is empty or contains **only whitespace**.
 
@@ -146,7 +187,7 @@ String b = "Java";  // same reference
 
 ---
 
-## 11. `charAt()`
+## 13. `charAt()`
 
 * Returns the character at a specific index.
 
@@ -156,7 +197,7 @@ String b = "Java";  // same reference
 
 ---
 
-## 12. `chars()`
+## 14. `chars()`
 
 * Returns an **IntStream** of character Unicode values.
 
@@ -167,7 +208,7 @@ String b = "Java";  // same reference
 
 ---
 
-## 13. `equals()`
+## 15. `equals()`
 
 * Compares **content**, not reference.
 
@@ -177,7 +218,7 @@ String b = "Java";  // same reference
 
 ---
 
-## 14. `replaceFirst("^0+", "")`
+## 16. `replaceFirst("^0+", "")`
 
 * Uses **regular expression**.
 * Removes **leading zeros**.
@@ -194,7 +235,7 @@ Used to convert **primitive data types into String**.
 
 ---
 
-## 15. `String.valueOf(boolean b)`
+## 17. `String.valueOf(boolean b)`
 
 ```java
 String.valueOf(true); // "true"
@@ -202,7 +243,7 @@ String.valueOf(true); // "true"
 
 ---
 
-## 16. `String.valueOf(char c)`
+## 18. `String.valueOf(char c)`
 
 ```java
 String.valueOf('A'); // "A"
@@ -210,7 +251,7 @@ String.valueOf('A'); // "A"
 
 ---
 
-## 17. `String.valueOf(char[] data)`
+## 19. `String.valueOf(char[] data)`
 
 ```java
 char[] arr = {'J', 'a', 'v', 'a'};
@@ -219,7 +260,7 @@ String.valueOf(arr); // "Java"
 
 ---
 
-## 18. `String.valueOf(int i)`
+## 20. `String.valueOf(int i)`
 
 ```java
 String.valueOf(10); // "10"
@@ -227,7 +268,7 @@ String.valueOf(10); // "10"
 
 ---
 
-## 19. `String.valueOf(long l)`
+## 21. `String.valueOf(long l)`
 
 ```java
 String.valueOf(100000L); // "100000"
@@ -235,7 +276,7 @@ String.valueOf(100000L); // "100000"
 
 ---
 
-## 20. `String.valueOf(float f)`
+## 22. `String.valueOf(float f)`
 
 ```java
 String.valueOf(10.5f); // "10.5"
@@ -243,7 +284,7 @@ String.valueOf(10.5f); // "10.5"
 
 ---
 
-## 21. `String.valueOf(double d)`
+## 23. `String.valueOf(double d)`
 
 ```java
 String.valueOf(99.99); // "99.99"
@@ -256,7 +297,8 @@ String.valueOf(99.99); // "99.99"
 * Strings are **immutable**
 * Use `equals()` instead of `==`
 * `isEmpty()` ≠ `isBlank()`
+* `startsWith()` checks prefix, `contains()` checks anywhere
 * `replace()` replaces all matches, `replaceFirst()` replaces first match
 * `String.valueOf()` is preferred over concatenation for clarity
-
 ---
+
